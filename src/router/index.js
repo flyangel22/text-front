@@ -114,16 +114,6 @@ const routes = [
           login: true,
           admin: false
         }
-      },
-      {
-        path: 'like',
-        name: 'Like',
-        component: () => import(/* webpackChunkName: "like" */ '@/views/front/LikeView.vue'),
-        meta: {
-          title: 'TEXTURE 版畫工作室 | 我的收藏',
-          login: true,
-          admin: false
-        }
       }
     ]
   },
