@@ -58,7 +58,7 @@
       data-aos-duration="1500" data-aos-delay="300">
       <div class="title my-4"><img src="/logo1.png"></div>
       <h3>
-        以版畫藝術推廣為主要目標，透過人生而具備的本能－「感受美」為基礎，追求更精神層面的互動。規劃以具跨領域、獨特性之觀念為主，版印表現方式為輔，進行藝文活動之規劃及推廣，藉此讓人文、城市與思維交織的美好得以體現。
+        以版畫藝術推廣為主要目標，透過人生而具備的本能－「感受美」為基礎，追求更精神層面的互動。規劃以具跨領域、獨特性之觀念為主，版印表現方式為輔，進行藝文活動之規劃及推廣，藉此讓人文、城市與思維交織的美好得以體現。。
       </h3>
     </div>
     <v-btn class="ms-2" color="white" variant="outlined" theme="dark" size="small" to="/introduce"
