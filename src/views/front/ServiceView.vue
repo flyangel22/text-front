@@ -16,7 +16,7 @@
       <v-col cols="12">
         <v-card class="my-8" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
           <v-row>
-            <v-col cols="6"><v-img src="/service2.jpg" height="500px" cover></v-img>
+            <v-col cols="6"><v-img src="/service00.jpg" height="500px" cover></v-img>
             </v-col>
             <v-col cols="5" style="margin: auto;padding: 0;">
               <div d-flex flex-column justify-center align-center text-center>
