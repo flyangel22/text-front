@@ -56,16 +56,6 @@ const routes = [
         }
       },
       {
-        path: 'activitynew',
-        name: 'Activitynew',
-        component: () => import(/* webpackChunkName: "activitynew" */ '@/views/front/ActivityNewView.vue'),
-        meta: {
-          title: 'TEXTURE 版畫工作室 | 最新活動',
-          login: false,
-          admin: false
-        }
-      },
-      {
         path: 'activity',
         name: 'Activity',
         component: () => import(/* webpackChunkName: "activity" */ '@/views/front/ActivityView.vue'),
