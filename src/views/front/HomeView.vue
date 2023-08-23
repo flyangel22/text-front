@@ -80,7 +80,7 @@
           <v-col cols="8"><v-img src="/home4-2.jpg" cover :height="400"></v-img></v-col>
           <v-col cols="4"><v-img src="/home4-3.jpg" cover :height="400"></v-img></v-col>
           <v-col cols="12"> <v-btn @click="scrollToTop" prepend-icon="mdi-chevron-up" variant="text"
-              size="x-large">回到頂部。</v-btn>
+              size="x-large">回到頂部</v-btn>
           </v-col>
         </v-row>
       </v-container>
