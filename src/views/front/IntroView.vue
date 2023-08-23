@@ -4,10 +4,10 @@
       </v-parallax></v-col>
     <v-col cols="6" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="400">
       <div style="width:700px; position: relative;top:400px;left:100px;">
-        <h1>Texture
-          版畫工作室。</h1>
+        <h1>
+          版畫的特性。</h1>
         <h4>
-          人工印刷產生的誤差令每一張成品擁有些微不同，再以“限制印製張數”來區別市場上“無限量”精準一致的機械印刷品，其俱有大量複製性的同時，又兼具「獨特性」。這類的作品我們稱之--版畫。「可複製性」使得藝術是可以被分享的，創作者能擁有數件相同的作品。因此，版畫的複製特性也更能令大眾親近。
+          印製版畫時，人工印刷所產生的誤差，令每一張成品擁有些微不同，再以「限制印製張數」來區別市場上「無限量」精準一致的機械印刷品，其俱有大量複製性的同時，又兼具「獨特性」。這類的作品我們稱之--版畫。「可複製性」使得藝術是可以被分享的，創作者能擁有數件相同的作品。因此，版畫的複製特性也更能令大眾親近。
         </h4>
       </div>
     </v-col>
@@ -45,19 +45,7 @@
 </template>
 
 <script setup>
-// Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from 'swiper/vue'
 
-// Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/free-mode'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
-
-// import required modules
-import { Navigation, FreeMode, Pagination } from 'swiper/modules'
-
-const modules = [Navigation, FreeMode, Pagination]
 </script>
 
 <style>

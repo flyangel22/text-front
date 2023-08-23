@@ -15,48 +15,55 @@
         </v-parallax>
       </v-col>
     </v-row>
-    <v-row class="my-4"><v-col>
-        <div class="text-center">
-          <v-btn variant="outlined" class="mx-4" color="#7986CB">
-            <a @click="scrollToSection('#a2')">工作坊</a>
-          </v-btn>
-          <v-btn variant="outlined" class="mx-4" color="#F06292">
-            <a @click="scrollToSection('#a3')">展覽講座</a>
-          </v-btn>
-          <v-btn variant="outlined" class="mx-4" color="#FB8C00">
-            <a @click="scrollToSection('#a4')">投稿活動</a>
-          </v-btn>
-        </div>
-      </v-col></v-row>
-    <v-row class="mb-8">
-      <v-col cols="12" class="my-6">
-        <h2 class="text-center" id="a1">— 全部活動 —</h2>
-      </v-col>
-      <v-col cols="12" md="6" lg="4" v-for="product in products" :key="product._id">
-        <ProductCard v-bind="product"></ProductCard>
-      </v-col>
-      <v-col cols="12" id="a2" class="my-8">
-        <h2 class="text-center">— 工作坊 —</h2>
-      </v-col>
-      <template v-for="product in products" :key="product._id">
-        <v-col cols="12" md="6" lg="4" v-if="product.category === '工作坊'">
-          <ProductCard v-bind="product"></ProductCard>
-        </v-col></template>
-      <v-col cols="12" id="a3" class="my-8">
-        <h2 class="text-center">— 展覽講座 —</h2>
-      </v-col>
-      <template v-for="product in products" :key="product._id">
-        <v-col cols="12" md="6" lg="4" v-if="product.category === '展覽講座'">
-          <ProductCard v-bind="product"></ProductCard>
-        </v-col></template>
-      <v-col cols="12" id="a4" class="my-8">
-        <h2 class="text-center">— 投稿活動 —</h2>
-      </v-col>
-      <template v-for="product in products" :key="product._id">
-        <v-col cols="12" md="6" lg="4" v-if="product.category === '投稿活動'">
-          <ProductCard v-bind="product"></ProductCard>
-        </v-col></template>
-    </v-row>
+    <v-tabs v-model="tab" align-tabs="center" class="mx-4" color="#1A237E" data-aos="fade-down" data-aos-duration="1000"
+      data-aos-delay="300">
+      <v-tab value="one" class="text-button">全部活動</v-tab>
+      <v-tab value="two" color="#7986CB">工作坊</v-tab>
+      <v-tab value="three" color="#F06292">展覽講座</v-tab>
+      <v-tab value="four" color="#FB8C00">投稿活動
+      </v-tab>
+    </v-tabs>
+
+    <v-window v-model="tab" class="my-8" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300">
+      <v-window-item value="one">
+        <v-row>
+          <template v-for="product in products" :key="product._id">
+            <v-col cols="12" md="6" lg="4">
+              <ProductCard v-bind="product">
+              </ProductCard>
+            </v-col>
+          </template></v-row>
+      </v-window-item>
+
+      <v-window-item value="two">
+        <v-row>
+          <template v-for="product in products" :key="product._id">
+            <v-col cols="12" md="6" lg="4" v-if="product.category === '工作坊'">
+              <ProductCard v-bind="product">
+              </ProductCard>
+            </v-col>
+          </template></v-row>
+      </v-window-item>
+
+      <v-window-item value="three">
+        <v-row>
+          <template v-for="product in products" :key="product._id">
+            <v-col cols="12" md="6" lg="4" v-if="product.category === '展覽講座'">
+              <ProductCard v-bind="product">
+              </ProductCard>
+            </v-col>
+          </template></v-row>
+      </v-window-item>
+      <v-window-item value="four">
+        <v-row>
+          <template v-for="product in products" :key="product._id">
+            <v-col cols="12" md="6" lg="4" v-if="product.category === '投稿活動'">
+              <ProductCard v-bind="product">
+              </ProductCard>
+            </v-col>
+          </template></v-row>
+      </v-window-item>
+    </v-window>
   </v-container>
 </template>
 
@@ -87,10 +94,12 @@ const products = ref([]);
   }
 })()
 
-const scrollToSection = (selector) => {
-  const element = document.querySelector(selector)
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' })
-  }
+</script>
+
+<script>
+export default {
+  data: () => ({
+    tab: null
+  })
 }
 </script>

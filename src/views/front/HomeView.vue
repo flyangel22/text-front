@@ -5,7 +5,10 @@
   height: 100vh;">
       </video>
       <div class="bg-mask">
-        <div class="title"><img src="/logo1.png" style="scale: 80%;"></div>
+        <div class="introtext" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+          <p>在TEXTURE版畫工作室，每個人都可以成為大藝術家。</p>
+          <p>加入我們，一同探索版畫的無限魅力！</p>
+        </div>
         <v-btn @click="scrollToDown" icon="mdi-chevron-down" variant="text" size="x-large" class=" chevrondown"></v-btn>
       </div>
     </section>
@@ -166,11 +169,19 @@ export default {
   scale: 120%;
 }
 
+.introtext {
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+  text-align: right;
+  font-size: 30px;
+  line-height: 2;
+}
+
 .chevrondown {
   position: absolute;
-  bottom: 8%;
-  right: 48%;
-  scale: 150%;
+  bottom: 13%;
+  right: 5%;
 }
 
 html,

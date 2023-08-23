@@ -29,7 +29,7 @@
                 </div>
                 <v-card-actions class="d-flex justify-end">
                   <v-btn class="ms-2" color="#0e2a47ff" variant="elevated" theme="dark" size="small" to="/activity">
-                    View More
+                    More
                   </v-btn>
                 </v-card-actions>
               </div>
@@ -53,7 +53,7 @@
                 </div>
                 <v-card-actions class="d-flex justify-end">
                   <v-btn class="ms-2" color="#0e2a47ff" variant="elevated" theme="dark" size="small" to="/activity">
-                    View More
+                    More
                   </v-btn>
                 </v-card-actions>
               </div>
@@ -83,7 +83,7 @@
                 </div>
                 <v-card-actions class="d-flex justify-end">
                   <v-btn class="ms-2" color="#0e2a47ff" variant="elevated" theme="dark" size="small" to="/activity">
-                    View More
+                    More
                   </v-btn>
                 </v-card-actions>
               </div>

@@ -101,6 +101,7 @@ const drawer = ref(false)
 
 const items = [
   { to: '/introduce', title: '工作室介紹' },
+  { to: '/print', title: '版畫小知識' },
   { to: '/service', title: '服務項目' },
   { to: '/contact', title: '聯絡我們' }
 ]
@@ -162,5 +163,9 @@ export default {
 .logo1 {
   position: absolute;
   scale: 55%;
+}
+
+.v-menu>.v-overlay__content>.v-list {
+  background: #0e2a47ff;
 }
 </style>
